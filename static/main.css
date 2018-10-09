@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    background-image: url(http://thedockyard.co.uk/wp-content/uploads/2016/03/CTM-Logo-1.jpeg);
+    /* alt pic = http://i.imgur.com/A0Ddgpq.png */
+  font-family: sans-serif;
+  font-weight: 100;
+  background-size:cover;
+     /* background-position:50% 15%*/
+}
+/*https://pbs.twimg.com/media/DcQsDQnXcAAEARG.jpg:large*/
+/*http://thedockyard.co.uk/wp-content/uploads/2016/03/CTM-Logo-1.jpeg*/
+h1{
+  color: #A32A3D;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 30px 0px 10px;
+}
+
+h2{
+  color: #A32A3D;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 15px 0px 20px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #000;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #A32A3D;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #fff;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
