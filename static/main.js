@@ -22,14 +22,8 @@ function initializeClock(id, endtime) {
 
   function updateClock() {
     var t = getTimeRemaining(endtime);
-    
-    if (t.days >= 100) {
-        daysSpan.textContent = (t.days).slice(-3);
-    } else if (t.days >= 10) {
-        daysSpan.textContent = (t.days).slice(-2);
-    else {
-        daysSpan.textContent = (t.days).slice(-1);
-    }
+
+    daysSpan.textContent = ('0' + t.days).slice(-3);
     hoursSpan.textContent = ('0' + t.hours).slice(-2);
     minutesSpan.textContent = ('0' + t.minutes).slice(-2);
     secondsSpan.textContent = ('0' + t.seconds).slice(-2);
@@ -43,5 +37,5 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.UTC(2019, 4, 25, 20, 0, 0, 0));
+var deadline = new Date(Date.UTC(2018, 11, 25, 19, 0, 0, 0));
 initializeClock('clockdiv', deadline);
